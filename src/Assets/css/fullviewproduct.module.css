@@ -1,0 +1,76 @@
+.ProductName{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.ProductDes{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.ProductRatings{
+    width: 60px;
+    background-color: var(--color);
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ProductPriceSection{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.ProductPrice{
+    font-size: 25px;
+    color: var(--black);
+}
+.ProductMrpPrice{
+    text-decoration: line-through;
+    color: var(--grey);
+    font-size: 20px;
+}
+.ProductDiscount{
+    color: var(--color);
+    font-weight: 500;
+}
+.taxText{
+    font-weight: 500;
+    color:green;
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+.componentWrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin:5px 0px;
+}
+.componentHead{
+    margin: 5px 0px;
+}
+.buttonsSection{
+    max-width:450px;
+    width:100%;
+   display:flex;
+   align-items: center;
+   gap:20px;
+   margin:15px 0px;
+}
+
+.bagBtn{
+    background-color: var(--color);
+    color:white;
+    flex:1;
+    padding:10px 0px;
+}
+
+.wishlistBtn{
+    background-color: var(--black);
+    color:white;
+    flex:1;
+    padding:10px 0px;
+
+}
+

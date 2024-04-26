@@ -1,0 +1,118 @@
+header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+.menuBar{
+    font-size: 25px;
+    color: var(--color);
+
+}
+.navBrand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brandName{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color);
+}
+.brandSlogan{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+.navLink{
+    font-size: 16px;
+    margin: 0px auto;
+    font-weight: 500;
+    text-decoration: none;
+    color:var(--black);
+}
+
+.navButtons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userAccount{
+    width: 45px;
+    height: 45px;
+    background-color: var(--color);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.logoText{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.bagButton{
+    border: 1px solid var(--color);
+    color: var(--color);
+    transition: all 0.3s ;
+    border-radius: 5px;
+}
+.bagButton:hover{
+    background-color: var(--color);
+    color: white;
+}
+.wishlistButton,.loginButton{
+    background-color: var(--color);
+    color: white;
+    border-radius: 5px;
+}
+
+#offcanvas{
+    width: 50%;
+}
+.accountInfo{
+    width:300px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  padding: 10px;
+  background-color:white;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+}
+
+.logoutButton{
+    border: 1px solid red;
+    transition: all 0.2s;
+    border-radius: 5px;
+    float: right;
+}
+
+.logoutButton:hover{
+    background-color: red;
+    color: white;
+}
+
+@media(width < 767px){
+    .brandName{
+        font-size: 18px;
+    }
+    .brandSlogan{
+        font-size: 14px;
+    }
+    .navButtons{
+        gap: 8px;
+    }
+}

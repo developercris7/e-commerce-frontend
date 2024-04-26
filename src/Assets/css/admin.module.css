@@ -1,0 +1,165 @@
+.adminOptionSection {
+  display: flex;
+  align-items: center;
+}
+
+.adminOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.adminOptionActive {
+  background-color: var(--color);
+  color: white;
+}
+
+.adminElements {
+  margin-top: 20px;
+}
+
+/* Admin Dashboard */
+
+.dashboardWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.dashboardElement {
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+  padding: 5px 20px;
+  gap: 50px;
+  font-size: 18px;
+}
+
+.dashboardImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.dashboardText > p {
+  margin: 0;
+  text-align: center;
+}
+
+/* Admin Users */
+
+.userWrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.userAccount {
+  width: 45px;
+  height: 45px;
+  background-color: var(--color);
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.logoText {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.userInfoWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.userInfo {
+  flex-basis: 80%;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.userButtons {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.activityBtn {
+  background-color: var(--color);
+  color: white;
+  border-radius: 3px;
+}
+.blockBtn {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+/* Activity Section */
+
+.backBtn {
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+}
+
+.bagButton {
+  border: 1px solid var(--color);
+  color: var(--color);
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.bagButton:hover {
+  background-color: var(--color);
+  color: white;
+}
+.wishlistButton,
+.loginButton {
+  background-color: var(--color);
+  color: white;
+  border-radius: 5px;
+}
+
+@media (width<767px) {
+  .adminOption {
+    flex-basis: 25%;
+    font-size: 23px;
+  }
+  .dashboardWrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .dashboardElement {
+    gap: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .userInfoWrapper {
+    gap: 15px;
+  }
+  .userInfo {
+    font-size: 16px;
+  }
+  .userInfo,
+  .userButtons {
+    flex-basis: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (767px<=width<=991px) {
+  .dashboardWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

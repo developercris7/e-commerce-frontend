@@ -1,0 +1,78 @@
+.productWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+.productImg {
+  width: 130px;
+}
+
+.productDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0px;
+}
+
+.productPrices,
+.productButtons,.productComponents {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.productName {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+.productMrpPrice{
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.moveBtn {
+  background-color: var(--color);
+  color: white;
+  border-radius: 3px;
+}
+.delBtn {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.priceContainer {
+  max-width: 400px;
+  margin: 0px auto;
+  border: 1px solid var(--color);
+  padding: 15px;
+}
+
+.priceContainer > h3{
+    text-transform: uppercase;
+    color: var(--color);
+    text-align: center;
+}
+.priceText{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+.buyBtn{
+    width: 100%;
+    background-color: var(--color);
+    color: white;
+    margin-top: 20px;
+}
+@media (width<767px) {
+    .productImg{
+        width: 120px;
+    }
+    .productPrices,
+.productButtons,.productComponents {
+  gap: 5px;
+}
+}

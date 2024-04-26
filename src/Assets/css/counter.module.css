@@ -1,0 +1,11 @@
+.counterWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.productCount{
+    font-size: 18px;
+}
+@media (width<767px) {
+
+}

@@ -1,0 +1,53 @@
+.formContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formSection{
+    max-width: 420px;
+    background-color: white;
+    width: 100%;
+    min-height: 450px;
+    padding: 10px;
+}
+.title{
+    color: var(--color);
+   margin: 2px 0px;
+}
+.inputGroup{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--grey);
+    padding: 5px;
+    margin: 2px 0px;
+}
+
+.inputGroup:focus-within{
+    border-color: var(--color);
+}
+
+.iconLabel{
+    font-size: 18px;
+}
+.formInputsSection{
+    height: 230px;
+}
+.input1{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.formBtn{
+    background-color: var(--color);
+    color: white;
+    padding: 5px 0px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+

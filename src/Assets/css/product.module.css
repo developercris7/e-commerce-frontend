@@ -1,0 +1,42 @@
+.productImgSection {
+  position: relative;
+}
+
+.productRatings {
+  width: 50px;
+  background-color: rgb(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  border-radius: 2px;
+  color: var(--color);
+}
+.productName {
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+}
+.productDescription {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 450;
+}
+.productPrice {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.productMrpPrice {
+  text-decoration: line-through;
+  color: var(--grey);
+}
+
+.productOffer {
+  color: var(--color);
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 15px;
+}

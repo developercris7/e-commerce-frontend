@@ -1,0 +1,30 @@
+.filterButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.clearButton{
+    background-color: black;
+    color: white;
+}
+
+.applyButton{
+    background-color: var(--color);
+    color: white;
+}
+
+.filterOptions{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkBox{
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color);
+}

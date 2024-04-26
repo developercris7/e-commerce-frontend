@@ -1,0 +1,102 @@
+.totalProducts{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--black);
+} 
+
+.productDataSection{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    min-height: 500px;
+}
+
+.filterSection{
+    width: 250px;
+}
+
+.productSection{
+    flex: 1;
+    height: 100%;
+   
+}
+
+.sectionHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filterOptions{
+    width:150px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px 0px;
+    gap: 10px;
+    position: relative;
+}
+.filterOptions > button{
+    border: 1px solid var(--grey);
+    font-size: 18px;
+}
+
+.sectionBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+
+.sortOptions{
+    max-width: 200px;
+    width: 100%;
+    background-color:white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    border-radius: 1px solid var(--black);
+}
+.option{
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+.optionActive{
+    background-color: var(--color);
+    color: white;
+}
+.option:hover{
+    background-color: var(--color);
+    color:white;
+    
+}
+
+@media (width<=520px) {
+    .filterOptions{
+        width:100%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(521px<=width<767px ){
+    .filterOptions{
+        width:300px;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+@media(width<767px){
+  .sectionBody{
+    grid-template-columns: 1fr 1fr ;
+  }
+  
+}  
+
+@media(767px <= width<= 991px){
+    .sectionBody{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+}

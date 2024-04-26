@@ -1,0 +1,88 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+}
+
+label{
+   margin: 5px 0px;
+}
+
+input , select ,textarea{
+    width:100%;
+    padding: 5px 10px;
+    border: 1px solid var(--grey);
+    outline: none;
+}
+
+input:focus , select:focus{
+    border-color: var(--color);
+}
+.fiedWrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.field{
+    flex: 1;
+}
+.checkbox{
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color);
+}
+
+.formButtonsSection{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.cancelButton{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
+
+.createButton{
+    background-color: var(--color);
+    color: white;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
+
+.editFormImageSection{
+  margin: 10px 0px;
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
+
+}
+.formImage{
+    width:100px;
+    position: relative;
+}
+.image{
+    width:100px;
+}
+.deleteIcon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color:var(--color);
+    padding: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+@media(width<767px){
+    .editFormImageSection{
+       gap:10px;
+    }
+}
